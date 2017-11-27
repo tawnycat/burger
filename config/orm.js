@@ -43,7 +43,7 @@ var orm = {
     queryString += values.map(x => "?").toString();
     queryString += ") ";
 
-    connection.query(queryString, function(err, result) {
+    connection.query(queryString, values, function(err, result) {
       if (err) {
         throw err;
       }
