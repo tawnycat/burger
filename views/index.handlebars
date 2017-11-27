@@ -1,6 +1,12 @@
-<h1>Eat-Da-Burger!</h1>
-
-<h2>Burgers Waiting to be Devoured</h2>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-12">
+<h1 class="text-center m-3">Eat-Da-Burger!</h1>
+</div>
+</div>
+<div class="row d-flex">
+  <div id="not-eaten" class="col-md-4 border p-2">
+<h2 class="text-center p-2">Burgers Ready to Eat</h2>
 
 <ul>
   {{#each burgers}}
@@ -9,8 +15,12 @@
     {{/unless}}
   {{/each}}
 </ul>
-
-<h2>Already Eaten</h2>
+</div>
+<div id="burger-pic" class="col-md-4">
+  <img src="assets/images/bacon-burger.png" class="img-fluid">
+</div>
+<div id="eaten" class="col-md-4 border p-2">
+<h2 class="text-center p-2">Already Eaten</h2>
 
 <ul>
   {{#each burgers}}
@@ -19,14 +29,21 @@
     {{/if}}
   {{/each}}
 </ul>
-
-<h2>Add Your Dream Burger!</h2>
+</div>
+</div>
+<div class="row d-flex justify-content-center">
+<div id="burger-form" class="col-md-5 m-3 p-2">
+<h2 class="text-center p-2">Add Your Dream Burger!</h2>
 <form class="add-burger">
 
-  <div class="form-group">
-    <label for="burger-name">Burger Name:</label>
-    <input type="text" id="burger-name" name="name">
+  <div class="form-group d-flex justify-content-center">
+    <label for="burger-name">Burger Name: </label>
+    <input type="text" id="burger-name" name="name" class="ml-2">
   </div>
-
-  <button type="submit">Add Burger</button>
+  <div class="text-center">
+  <button type="submit" class="btn btn-danger">Add Burger</button>
+</div>
 </form>
+</div>
+</div>
+</div>
