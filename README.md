@@ -1,7 +1,7 @@
-# burger
+# Eat-Da-Burger!
 A full stack application using a MySQL database that keeps track of burgers eaten and burgers desired
 
-#Screenshot
+# Screenshot
 ![front page](public/assets/images/screenshot.PNG)
 
 # How It Works
